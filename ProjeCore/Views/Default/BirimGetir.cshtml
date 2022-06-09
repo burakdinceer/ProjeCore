@@ -1,0 +1,23 @@
+﻿@model ProjeCore.Models.Birim
+@{
+    ViewData["Title"] = "BirimGetir";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+
+
+<br />
+@using (Html.BeginForm("BirimGüncelle", "default", FormMethod.Post))
+{
+    <form asp-action="BirimGetir">
+        <label asp-for="BirimID">Departman ID</label>
+        <input asp-for="BirimID" />
+
+        <label asp-for="BirimAd">Birim Adı</label>
+        <input asp-for="BirimAd" />
+
+        <button>Birim Güncelle</button>
+
+    </form>
+}
+
